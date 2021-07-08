@@ -1,0 +1,85 @@
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .MuiInputBase-input {
+    background-color: #fff;
+  }
+
+  .MuiFilledInput-underline.Muifocused:after {
+    transform: none;
+  }
+
+  .MuiFilledInput-underline:after {
+    border: transparent;
+  }
+
+  input {
+    height: 5vh;
+    min-height: 50px;
+    width: 80vw;
+    padding: 0 10px;
+    font-size: 22px;
+    margin-left: 10px;
+
+    &:focus {
+      outline: none;
+    }
+
+    @media (max-width: 1300px) {
+      width: 80vw;
+    }
+
+    @media (max-width: 999px) {
+      margin-left: 0;
+    }
+  }
+
+  button {
+    border: 1px solid #fff;
+    margin-left: 25px;
+    color: #fff;
+    font-size: 19px;
+
+    &:focus {
+      outline: none;
+    }
+
+    @media (max-width: 999px) {
+      width: 0;
+      min-width: 47vw;
+      margin-top: 20px;
+      margin-left: 0;
+      padding: 5px 23px;
+      font-size: 22px;
+    }
+
+    @media (max-width: 785px) {
+      min-width: 83vw;
+    }
+  }
+
+  @media (max-width: 999px) {
+    flex-direction: column;
+  }
+}
+
+.field + button {
+  margin: 20px 0;
+  color: #fff;
+  font-size: 22px;
+  border: 1px solid #fff;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (max-width: 999px) {
+    width: 47vw;
+  }
+
+  @media (max-width: 785px) {
+    width: 83vw;
+  }
+}

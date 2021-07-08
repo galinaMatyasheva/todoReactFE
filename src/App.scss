@@ -1,0 +1,29 @@
+.app {
+  text-align: center;
+}
+
+body {
+  overflow-y: hidden;
+
+  @media (orientation: landscape) {
+    overflow-y: scroll;
+  }
+}
+
+.app-body {
+  display: flex;
+  flex-direction: column;
+  background-color: #282c34;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: #fff;
+
+  h1 {
+    @media (max-width: 785px) {
+      font-size: 50px;
+      margin: 10px 0;
+    }
+  }
+}
