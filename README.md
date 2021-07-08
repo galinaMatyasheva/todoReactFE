@@ -1,4 +1,8 @@
-#npm 
-#react
+# npm 
+# react
 functional components
-#scss, material UI
+# scss, material UI
+
+npm install
+
+npm run start
